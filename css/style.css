@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Minecraftia', sans-serif;
+    background: #0d0d0d;
+    color: #eaeaea;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #00ff00;
+    animation: glow 2s infinite;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #eaeaea;
+}
+
+.rules h2, .join h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #00ff00;
+}
+
+.rules ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+    font-size: 1.2rem;
+}
+
+.rules ul li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.rules ul li:before {
+    content: "🔹";
+    position: absolute;
+    left: 0;
+}
+
+.join p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #eaeaea;
+}
+
+.btn {
+    display: inline-block;
+    background: #00ff00;
+    color: #0d0d0d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #1c8c1c;
+    transform: scale(1.05);
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    z-index: -1;
+    filter: blur(8px) brightness(0.3);
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    }
+    50% {
+        text-shadow: 0 0 20px #1c8c1c, 0 0 40px #1c8c1c, 0 0 50px #1c8c1c;
+    }
+}
