@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'MineCraftCTF';
 $user = 'root';
-$password = 'password'; // Pas de mot de passe
+$password = ''; // Pas de mot de passe
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
